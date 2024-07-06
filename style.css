@@ -102,3 +102,44 @@ h1 {
 #top-date {
     margin-left: 150px;
 }
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #todo-form {
+        flex-direction: column;
+    }
+
+    #todo-input,
+    #todo-date {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        flex-basis: 35px;
+    }
+
+    #add-button {
+        width: 100%;
+    }
+
+    .todo-header,
+    .todo-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo-header span,
+    .todo-item span {
+        margin-bottom: 10px;
+    }
+
+    #top-date {
+        margin-left: 0;
+    }
+
+    .btn-delete {
+        width: 100%;
+    }
+}
